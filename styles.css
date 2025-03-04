@@ -1,5 +1,5 @@
 /* Reset some default browser styles */
-body, h1, h2, h3, p, ul {
+body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
@@ -51,49 +51,32 @@ main {
     margin: 20px 0;
 }
 
-.articles {
+article {
     flex: 3;
-}
-
-.articles article {
     background: #fff;
-    margin-bottom: 20px;
     padding: 20px;
+    margin-right: 20px;
     border-radius: 5px;
 }
 
-.articles article img {
-    max-width: 100%;
-    border-radius: 5px;
+article h1 {
+    margin-bottom: 10px;
 }
 
-.articles h2 {
-    margin-top: 10px;
-}
-
-.articles .meta {
+article .meta {
     font-size: 0.9em;
     color: #777;
+    margin-bottom: 20px;
 }
 
-.articles .read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #333;
-    text-decoration: none;
-    border: 1px solid #333;
-    padding: 5px 10px;
+article img {
+    max-width: 100%;
     border-radius: 5px;
-}
-
-.articles .read-more:hover {
-    background: #333;
-    color: #fff;
+    margin-bottom: 20px;
 }
 
 aside {
     flex: 1;
-    margin-left: 20px;
 }
 
 aside section {
@@ -103,7 +86,7 @@ aside section {
     border-radius: 5px;
 }
 
-aside h3 {
+aside h2 {
     margin-bottom: 10px;
 }
 
