@@ -3,154 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Post - GitHub Pages</title>
-    <meta name="description" content="This is a sample blog post hosted on GitHub Pages.">
-    <meta name="author" content="Your Name">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        .meta {
-            color: gray;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        img {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-        video {
-            width: 100%;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .content {
-            margin-top: 20px;
-        }
-        .back-link {
-            display: block;
-            margin-top: 20px;
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-        }
-
-        /* Anchor Ad Container */
-        .anchor-ad {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.3);
-            z-index: 9999;
-            padding: 5px 0;
-        }
-        .ad-wrapper {
-            display: inline-block;
-            max-width: 728px; /* Default desktop size */
-            width: 100%;
-        }
-        iframe {
-            width: 100%;
-            height: 90px; /* Default height */
-            border: none;
-        }
-        /* Close Button */
-        .close-ad {
-            position: absolute;
-            right: 10px;
-            top: 5px;
-            background: red;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-        @media (max-width: 768px) {
-            .ad-wrapper {
-                max-width: 728px; /* Mobile-friendly size */
-            }
-            iframe {
-                height: 90px; /* Adjust height for smaller screens */
-            }
-        
-    </style>
+    <title>Blog News - Explore Daily Wildlife</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-     <!-- Anchor Ad -->
-    <div class="anchor-ad" id="anchorAd">
-        <button class="close-ad" onclick="closeAd()">X</button>
-        <div class="ad-wrapper">
-<script type="text/javascript">
-	atOptions = {
-		'key' : '6e32abe9042e01542eb84db122874d2a',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//sparrowaboveaveragedefence.com/6e32abe9042e01542eb84db122874d2a/invoke.js"></script>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Blog News Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Wild</a></li>
+                    <li><a href="#">Weird</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- Page Content -->
-    <div style="padding: 20px;">
-        <h1>Responsive Anchor Ad Example</h1>
-        <p>This anchor ad will stay at the top and be responsive based on screen size.</p>
-    </div>
+    <main>
+        <div class="container">
+            <section class="articles">
+                <article>
+                    <img src="images/article1.jpg" alt="Article 1 Image">
+                    <h2><a href="#">15 Amazing Animals You Would Love to Have</a></h2>
+                    <p class="meta">December 25, 2024 - by Sam Tery - <a href="#">Leave a Comment</a></p>
+                    <p>As household animals, people around the world raise incredible creatures other than cats and dogs...</p>
+                    <a class="read-more" href="#">Read More</a>
+                </article>
+                <!-- Repeat similar <article> blocks for other articles -->
+            </section>
 
-    <script>
-        function closeAd() {
-            document.getElementById("anchorAd").style.display = "none";
-        }
-    </script>
+            <aside>
+                <section class="search">
+                    <h3>Search</h3>
+                    <form action="#" method="get">
+                        <input type="text" name="search" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </section>
 
-    <div class="container">
-        <h1>My First Blog Post</h1>
-        <p class="meta">Published on <strong>March 1, 2025</strong> by <strong>Your Name</strong></p>
-        
-        <img src="https://your-username.github.io/repository-name/image.jpg" alt="Blog Image">
+                <section class="categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Wild</a></li>
+                        <li><a href="#">Weird</a></li>
+                    </ul>
+                </section>
 
-        <div class="content">
-            <p>Welcome to my blog post! This is an example of how you can create a simple blog post layout using HTML and host it on GitHub Pages.</p>
-            
-            <p>GitHub Pages is a great way to publish your static websites, including blogs like this one. All you need to do is upload your HTML, CSS, and images, and GitHub will take care of the rest!</p>
-
-            <h2>Adding a Video</h2>
-            <p>You can also include videos in your blog post:</p>
-
-            <video controls>
-                <source src="https://khxyz.xyz/y1/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-            <h2>Conclusion</h2>
-            <p>This is a basic blog post template for GitHub Pages. You can modify this layout and add more styles to make it look like a real WordPress-style blog.</p>
-
-            <a class="back-link" href="index.html">← Back to Home</a>
+                <section class="archives">
+                    <h3>Archives</h3>
+                    <ul>
+                        <li><a href="#">December 2024</a></li>
+                        <!-- Add more archive links as needed -->
+                    </ul>
+                </section>
+            </aside>
         </div>
-    </div>
-<script id="_waumdn">var _wau = _wau || []; _wau.push(["dynamic", "4iybubkv03", "mdn", "ffffffffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Blog News. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
